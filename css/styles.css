@@ -17,6 +17,12 @@
   --body-font-family-size: 16px;
   --body-font-family-size: 1.6;
   --profile-pic-width-height: 250px;
+  --logo-width-size: 200px;
+  --button-color: #333;
+}
+
+#logo {
+  width: var(--logo-width-size);
 }
 
 a {
@@ -46,7 +52,7 @@ h3 {
 }
 
 a {
-  color: var(--website-green);
+  color: var(--webpage-black);
 }
 
 a:hover,
@@ -55,17 +61,17 @@ a:focus {
 }
 
 a:visited {
-  color: 05676;
+  color: grey;
 }
 
 a:active {
-  color: var(--website-green);
+  color: var(--webpage-black);
 }
 
 button {
   border: none;
   font-family: inherit;
-  background-color: var(--website-green);
+  background-color: var(--button-color);
   color: var(--webpage-white);
   text-decoration: none;
   padding: 10px;
@@ -97,18 +103,26 @@ button:focus {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-top: 300px;
+}
+
+.icon-links {
+  text-decoration: none;
 }
 
 .github-icon {
   width: 30px;
+  text-decoration: none;
 }
 
 .twitter-icon {
   width: 30px;
+  text-decoration: none;
 }
 
 .linkedin-icon {
   width: 30px;
+  text-decoration: none;
 }
 
 .button-div {
@@ -118,6 +132,7 @@ button:focus {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  padding-top: 90px;
 }
 
 * {
@@ -133,6 +148,7 @@ button:focus {
 
 .page-header__item {
   flex: 0 1 200px;
+  padding-right: 40px;
 }
 
 .page-header__item:last-child {
@@ -153,11 +169,15 @@ button:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  padding-left: 2%;
+  padding-right: 3%;
 }
 
 .grid__item {
   display: inline-block;
   width: 33%;
+  padding: 5%;
+  border-radius: 10px;
 }
 
 @supports (display: grid) {
@@ -213,7 +233,7 @@ button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #357b70;
+  background-color: var(--button-color);
   color: var(--webpage-white);
   text-decoration: none;
   padding: 10px;
@@ -296,4 +316,79 @@ table {
 
 #path22 {
   animation: 4s color-change-3 infinite alternate linear;
+}
+
+.table-head {
+  padding: 20px;
+}
+
+.skills-table-column {
+  text-align: left;
+}
+
+#svg2 {
+  display: flex;
+  position: absolute;
+}
+
+.city-image-container {
+  display: inline;
+  position: absolute;
+  width: 1920px;
+  height: 100%;
+  margin-top: 40 px;
+  border: 8px;
+  border-style: solid;
+  border-color: red;
+}
+
+.city-image {
+  position: absolute;
+  margin-top: 0;
+}
+
+#contact {
+  position: static;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3%;
+}
+
+#contact-form {
+  display: inline-block;
+  margin-bottom: 200px;
+  margin-left: 45%;
+  margin-top: 2%;
+}
+
+.address-contact {
+  width: 1920 px;
+  height: 600 px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.address {
+  display: inline-block;
+  margin-left: 19%;
+}
+
+.contact-info {
+  display: inline-block;
+  margin-left: 44%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.work-heading {
+  text-align: center;
+}
+
+.project-titles {
+  text-align: center;
+}
+
+#work-footer {
+  padding-bottom: 5%;
 }
