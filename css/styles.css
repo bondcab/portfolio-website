@@ -337,9 +337,6 @@ table {
   width: 1920px;
   height: 100%;
   margin-top: 40 px;
-  border: 8px;
-  border-style: solid;
-  border-color: red;
 }
 
 .city-image {
