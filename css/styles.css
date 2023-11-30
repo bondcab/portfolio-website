@@ -264,6 +264,7 @@ button:focus,
 
 .about-body {
   text-align: center;
+  margin-top: 110px;
 }
 
 table {
@@ -385,7 +386,7 @@ table {
 .contact-info {
   display: inline-block;
   margin-left: 44%;
-  padding-top: 16px;
+  /* padding-top: 16px; */
   padding-bottom: 16px;
 }
 
@@ -415,10 +416,26 @@ table {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 230px;
+  margin-bottom: 190px;
 }
 
 .form {
   /* border: solid green; */
   width: 300px;
+  margin-top: 40px;
+}
+
+.contactHeading {
+  margin-bottom: 50px;
+  /* border: solid red; */
+}
+
+.contact-div {
+  margin-top: 110px;
+  /* border: solid green; */
+}
+
+#message {
+  border-radius: 6px;
+  border-color: rgba(0, 0, 0, 0.2);
 }
