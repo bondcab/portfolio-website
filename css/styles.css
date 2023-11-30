@@ -1,6 +1,6 @@
 :root {
   --website-green: #357b70;
-  --work-projects-background: lightgrey;
+  --work-projects-background: white;
   --webpage-white: #fff;
   --webpage-black: #000;
   --about-city-grey-1: #ebebeb;
@@ -12,7 +12,7 @@
   --h1-font-size: 30px;
   --h2-font-size: 24px;
   --h3-font-size: 18px;
-  --body-font-family: 'Lato', sans-serif;
+  --body-font-family: "Lato", sans-serif;
   --body-font-weight: 400;
   --body-font-family-size: 16px;
   --body-font-family-size: 1.6;
@@ -142,8 +142,13 @@ button:focus {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
-  border-bottom: solid grey 1px;
+  /* padding: 20px; */
+  /* border-bottom: solid grey 1px; */
+  /* border: solid red; */
+  margin-bottom: 0;
+  padding-bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 2;
 }
 
 .page-header__item {
@@ -158,6 +163,7 @@ button:focus {
 
 .navigation-list {
   list-style-type: none;
+  padding-top: 15px;
 }
 
 .navigation-list li {
@@ -178,6 +184,11 @@ button:focus {
   width: 33%;
   padding: 5%;
   border-radius: 10px;
+  text-decoration: none;
+}
+
+.grid__item:visited {
+  color: inherit;
 }
 
 @supports (display: grid) {
@@ -195,10 +206,10 @@ button:focus {
     margin: 0;
   }
 
-  .grid__item:last-child {
+  /* .grid__item:last-child {
     grid-column: 3 / 3;
-    grid-row: 1 / 3;
-  }
+    grid-row: 1;
+  } */
 }
 
 @media all and (max-width: 500px) {
@@ -380,6 +391,9 @@ table {
 
 .work-heading {
   text-align: center;
+  /* border: solid red; */
+  padding-top: 30px;
+  margin-top: 0;
 }
 
 .project-titles {
@@ -388,4 +402,23 @@ table {
 
 #work-footer {
   padding-bottom: 5%;
+}
+
+.workSection {
+  background-color: lightgrey;
+  /* border: solid red; */
+  padding-bottom: 100px;
+}
+
+.formContainer {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 230px;
+}
+
+.form {
+  /* border: solid green; */
+  width: 300px;
 }
